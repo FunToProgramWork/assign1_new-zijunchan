@@ -13,6 +13,11 @@ void setup() {
 
   soilImag = loadImage("img/soil.png");
   lifeImag = loadImage("img/life.png");
+  
+  stroke(255,255,0);//太陽外圍顏色
+  fill(253,184,19);//太陽內在顏色
+  circle(550, 30, 160);//太陽的位置
+  
   groundhogImag = loadImage("img/groundhog.png");
   robotImag = loadImage("img/robot.png");
   soldierImag = loadImage("img/soldier.png");
