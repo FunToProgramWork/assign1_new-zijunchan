@@ -39,15 +39,11 @@ void draw() {
     strokeCap(ROUND);
     stroke(255,0,0);//color
     line(lightPos -40, 240+37, lightPos, 240+37);//Let the lightPos in the correct seat
-    lightPos = lightPos-2;//Let the lightPos turn left
+    lightPos = lightPos-3;//Let the lightPos turn left
     if(lightPos<-100)//let lightPos go back
     lightPos = 240+30;
     
-    x=x+2;
+    x=x+3;
     if ( x > 640)
     x = -80;
-
-  stroke(255,255,0);//the sun outside color
-  fill(253,184,19);//the sun inside color
-  circle(520, 30, 160);//the sun size and location
 }
