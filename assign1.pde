@@ -10,7 +10,6 @@ int lightPos = 240;//the lightpos shoot and go back
 void setup() {
   size(600,480,P2D);
   bgImag = loadImage("img/bg.jpg");
-
   soilImag = loadImage("img/soil.png");
   lifeImag = loadImage("img/life.png"); 
   groundhogImag = loadImage("img/groundhog.png");
@@ -27,9 +26,6 @@ void draw() {
   stroke(124,204,25);
   line(0, 152, 800, 152);
      
-  stroke(255,255,0);//太陽外圍顏色
-  fill(253,184,19);//太陽內在顏色
-  circle(550, 30, 160);//太陽的位置
   
   image(soilImag,0,160);
   image(lifeImag,10,10);
