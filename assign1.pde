@@ -12,12 +12,7 @@ void setup() {
   bgImag = loadImage("img/bg.jpg");
 
   soilImag = loadImage("img/soil.png");
-  lifeImag = loadImage("img/life.png");
-  
-  stroke(255,255,0);//太陽外圍顏色
-  fill(253,184,19);//太陽內在顏色
-  circle(550, 30, 160);//太陽的位置
-  
+  lifeImag = loadImage("img/life.png"); 
   groundhogImag = loadImage("img/groundhog.png");
   robotImag = loadImage("img/robot.png");
   soldierImag = loadImage("img/soldier.png");
@@ -30,7 +25,11 @@ void draw() {
   strokeWeight(15.0);//The above is the code for the grass. I put it here because it will block the groundhog's feet.
   strokeCap(SQUARE);
   stroke(124,204,25);
-    line(0, 152, 800, 152);
+  line(0, 152, 800, 152);
+     
+  stroke(255,255,0);//太陽外圍顏色
+  fill(253,184,19);//太陽內在顏色
+  circle(550, 30, 160);//太陽的位置
   
   image(soilImag,0,160);
   image(lifeImag,10,10);
