@@ -1,11 +1,11 @@
-PImage bgImag;//int background
-PImage soilImag;//int soil
-PImage lifeImag;//int groundhog life
-PImage groundhogImag;//int groundhog
-PImage robotImag;//int robot
-PImage soldierImag;//int soldier
-int x = 0;//the soldier walk and go back use
-int lightPos = 240;//the lightpos shoot and go back
+PImage bgImag;
+PImage soilImag;
+PImage lifeImag;
+PImage groundhogImag;
+PImage robotImag;
+PImage soldierImag;
+int x = 0;
+int lightPos = 240;
 
 void setup() {
   size(600,480,P2D);
@@ -22,11 +22,11 @@ void draw() {
   
   image(bgImag, 0, 0);
   
-  stroke(255, 255, 0);
-  fill(253, 184, 19);
-  ellipse(570, 30, 150, 150);
+  stroke(255, 255, 0);//sun outside color
+  fill(253, 184, 19);//sun inside color
+  ellipse(570, 30, 150, 150);//sun
 
-  strokeWeight(15.0);//The above is the code for the grass. I put it here because it will block the groundhog's feet.
+  strokeWeight(15.0);//grass
   strokeCap(SQUARE);
   stroke(124,204,25);
   line(0, 152, 800, 152);
@@ -46,7 +46,7 @@ void draw() {
     x = -80;
     
       
-  strokeWeight(10.0);//There code are used to let the lightPos can be action
+    strokeWeight(10.0);//lightPos
     strokeCap(ROUND);
     stroke(255,0,0);//color
     line(lightPos -40, 240+37, lightPos, 240+37);//Let the lightPos in the correct seat
