@@ -26,7 +26,13 @@ void setup() {
 void draw() {
     // Enter Your Code Here
   image(bgImg,0,0);
-
+  stroke(255,255,0);//the sun outside color
+  fill(253,184,19);//the sun inside color
+  circle(520, 30, 160);//the sun size and location
+  strokeWeight(15.0);//The above is the code for the grass. I put it here because it will block the groundhog's feet.
+  strokeCap(SQUARE);
+  stroke(124,204,25);
+  line(0, 152, 800, 152);
   image(groundhogImag,250,80);
   
   image(soilImg, 0,160);
@@ -43,8 +49,10 @@ void draw() {
   line(lightPos -40, 240+37, lightPos, 240+37);
   lightPos=lightPos-2;
   
+  if(lightPos<-100)//let lightPos go back
+  lightPos = 240+30;
   
-  x=x+1;
+  x=x+2;
   if ( x > 640)
     x = -80;
   
