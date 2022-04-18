@@ -35,9 +35,6 @@ void draw() {
   image(robotImag,240,240);
   image(soldierImag,x,160);
   
-  stroke(255,255,0)；
-  fill(253,184,19);
-  circle(550, 30, 160);
   
     x=x+3;
     if ( x > 640)
