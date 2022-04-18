@@ -42,9 +42,7 @@ void draw() {
      if(lightPos<-500){//let lightPos go back
        lightPos = 240+30;
      }
-     x=x+2  ;//let the soldier action
-    if(x>640){//let the soldier go back to the original location
-     x = -80;
+
   }
     stroke(255,255,0);//the sun outside color
     fill(253,184,19);//the sun inside color
