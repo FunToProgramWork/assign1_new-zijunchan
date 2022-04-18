@@ -49,6 +49,11 @@ void draw() {
     if(lightPos<-100)//let lightPos go back
     lightPos = 240+30;
     
+      strokeWeight(6);//circle thickness is 5 --> sun
+  stroke(255, 255, 0);//big circle color --> sun
+  fill(253, 184, 19);//small circle color --> sun
+  circle(550,50,160);//circle location --> sun
+    
 
     
 }
