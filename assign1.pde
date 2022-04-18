@@ -43,7 +43,7 @@ void draw() {
        lightPos = 240+30;
      }
 
-  }
+
     stroke(255,255,0);//the sun outside color
     fill(253,184,19);//the sun inside color
     circle(520, 30, 160);//the sun size and location
