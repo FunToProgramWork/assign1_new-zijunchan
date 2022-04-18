@@ -44,5 +44,7 @@ void draw() {
     strokeCap(ROUND);
     stroke(255,0,0);//color
     line(lightPos -40, 240+37, lightPos, 240+37);//Let the lightPos in the correct seat
-    lightPos = lightPos-3;//Let the lightPos turn left
+    lightPos = lightPos-4;//Let the lightPos turn left
+    if(lightPos<-100)//let lightPos go back
+    lightPos = 240+30;
 }
