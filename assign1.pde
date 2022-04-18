@@ -22,8 +22,12 @@ void draw() {
   
   image(bgImag, 0, 0);
   
+  ellipse(224, 184, 220, 220);
 
-
+  strokeWeight(15.0);//The above is the code for the grass. I put it here because it will block the groundhog's feet.
+  strokeCap(SQUARE);
+  stroke(124,204,25);
+  line(0, 152, 800, 152);
      
   
   image(soilImag,0,160);
@@ -48,10 +52,6 @@ void draw() {
     if(lightPos<-100)//let lightPos go back
     lightPos = 240+30;
 
-  strokeWeight(15.0);//The above is the code for the grass. I put it here because it will block the groundhog's feet.
-  strokeCap(SQUARE);
-  stroke(124,204,25);
-  line(0, 152, 800, 152);
     
 
     
