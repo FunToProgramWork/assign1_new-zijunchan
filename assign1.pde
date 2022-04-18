@@ -49,6 +49,6 @@ void draw() {
     if(lightPos<-100)//let lightPos go back
     lightPos = 240+30;
     
-    circle(550, 30, 160);
+
     
 }
