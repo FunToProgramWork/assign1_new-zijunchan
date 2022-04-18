@@ -1,4 +1,4 @@
-let bgImag;//let background
+var bgImag;//let background
 let soilImag;//let soil
 let lifeImag;//let groundhog life
 let groundhogImag;//let groundhog
@@ -8,7 +8,7 @@ let x = 0;//the soldier walk and go back use
 let lightPos = 240;//the lightpos shoot and go back
 
 function setup() {
-  createCanvas(600,480,P2D);
+  createCanvas(1000,1000,P2D);
   bgImag = loadImage("bg.jpg");
   soilImag = loadImage("soil.png");
   lifeImag = loadImage("assets1/life.png");
