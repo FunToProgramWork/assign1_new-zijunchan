@@ -1,24 +1,24 @@
-let bgImag;//let background
-let soilImag;//let soil
-let lifeImag;//let groundhog life
-let groundhogImag;//let groundhog
-let robotImag;//let robot
-let soldierImag;//let soldier
-let x = 0;//the soldier walk and go back use
-let lightPos = 240;//the lightpos shoot and go back
+PImage bgImag;//int background
+PImage soilImag;//int soil
+PImage lifeImag;//int groundhog life
+PImage groundhogImag;//int groundhog
+PImage robotImag;//int robot
+PImage soldierImag;//int soldier
+int x = 0;//the soldier walk and go back use
+int lightPos = 240;//the lightpos shoot and go back
 
-function setup() {
-  createCanvas(600,480,P2D);
+void setup() {
+  size(600,480,P2D);
   bgImag = loadImage("bg.jpg");
   soilImag = loadImage("soil.png");
-  lifeImag = loadImage("assets1/life.png");
-  groundhogImag = loadImage("assets1/groundhog.png");
-  robotImag = loadImage("assets1/robot.png");
-  soldierImag = loadImage("assets1/soldier.png");
+  lifeImag = loadImage("life.png");
+  groundhogImag = loadImage("groundhog.png");
+  robotImag = loadImage("robot.png");
+  soldierImag = loadImage("soldier.png");
   //Every variable is used to import image
 }
 
-function draw() {
+void draw() {
   
   image(bgImag, 0, 0);
   strokeWeight(15.0);//The above is the code for the grass. I put it here because it will block the groundhog's feet.
@@ -48,5 +48,5 @@ function draw() {
   }
     stroke(255,255,0);//the sun outside color
     fill(253,184,19);//the sun inside color
-    circle(520, 30, 160);//the sun createCanvas and location
+    circle(520, 30, 160);//the sun size and location
 }
