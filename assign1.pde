@@ -21,9 +21,6 @@ void setup() {
 void draw() {
   
   image(bgImag, 0, 0);
-  
-  circle(550, 30, 160);
-  
   strokeWeight(15.0);//The above is the code for the grass. I put it here because it will block the groundhog's feet.
   strokeCap(SQUARE);
   stroke(124,204,25);
@@ -51,4 +48,7 @@ void draw() {
     lightPos = lightPos-4;//Let the lightPos turn left
     if(lightPos<-100)//let lightPos go back
     lightPos = 240+30;
+    
+    circle(550, 30, 160);
+    
 }
