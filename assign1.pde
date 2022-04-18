@@ -35,13 +35,14 @@ void draw() {
   image(robotImag,240,240);
   image(soldierImag,x,160);
   
+    x=x+3;
+    if ( x > 640)
+    x = -80;
+    
+      
   strokeWeight(10.0);//There code are used to let the lightPos can be action
     strokeCap(ROUND);
     stroke(255,0,0);//color
     line(lightPos -40, 240+37, lightPos, 240+37);//Let the lightPos in the correct seat
     lightPos = lightPos-3;//Let the lightPos turn left
-    
-    x=x+3;
-    if ( x > 640)
-    x = -80;
 }
