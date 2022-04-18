@@ -22,6 +22,8 @@ void draw() {
   
   image(bgImag, 0, 0);
   
+  stroke(255, 255, 0);
+  fill(253, 184, 19);
   ellipse(224, 184, 220, 220);
 
   strokeWeight(15.0);//The above is the code for the grass. I put it here because it will block the groundhog's feet.
